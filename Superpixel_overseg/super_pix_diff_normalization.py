@@ -19,7 +19,8 @@ def norm_array(X, x_min = 0, x_max = 1):
     return x_min + nom/denom
 
 #Read the input image
-X_f = dip.imread('tiger.jpg')
+# X_f = dip.imread('tiger.jpg')
+X_f = dip.imread('coloredChips.png')
 
 dip.figure(1)
 # display the input image
