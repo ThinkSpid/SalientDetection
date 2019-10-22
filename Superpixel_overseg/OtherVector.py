@@ -7,11 +7,6 @@ import dippykit as dip
 import cv2
 import numpy as np
 
-# This does almost the same thing as the super_pix.py, except it changes some parameters and performs normalization of
-# the RGB vector mu_super_pix and position vector ctr_super_pix. I'm doing this in order to get some better results.
-# The paper does not mention anything about normalization, but the results are really bad if we just implement what they
-# wrote. Also note that it takes quite a lot of time to execute.
-
 # Function for normalizing an array along its columns
 def norm_array(X, x_min = 0, x_max = 1):
     nom = (X-X.min(axis=0))*(x_max-x_min)
@@ -19,22 +14,19 @@ def norm_array(X, x_min = 0, x_max = 1):
     return x_min + nom/denom
 
 #Read the input image
-# X_f = dip.imread('tiger.jpg')
-X_f = dip.imread('coloredChips.png')
+X_f = dip.imread('tiger.jpg')
 
-dip.figure(1)
 # display the input image
 dip.imshow(X_f)
-plt.savefig('p1.png',dpi=300,bbox_inches='tight',pad_inches=0.1)
+dip.show()
 
 # Calculate the superpixels. The output of slic is an image with the pixel values as superpixel indices. The size
 # of the image is same as the input image.
-super_pixels = slic(X_f, n_segments = 500, sigma = 5)
+super_pixels = slic(X_f, n_segments = 300, sigma = 5)
 
 # This is to visualize the boundaries of superpixels
-dip.figure(2)
 dip.imshow(mark_boundaries(X_f, super_pixels))
-plt.savefig('p2.png',dpi=300,bbox_inches='tight',pad_inches=0.1)
+dip.show()
 
 # Get the number of superpixels
 num_super_pix = len(np.unique(super_pixels))
@@ -72,10 +64,6 @@ for n in range(num_super_pix):
     mu_super_pix[n, 1] = np.mean(np.asarray(temp_S_g))
     mu_super_pix[n, 2] = np.mean(np.asarray(temp_S_b))
 
-# Normalize these arrays using norm_array function
-mu_super_pix = norm_array(mu_super_pix)
-ctr_super_pix = norm_array(ctr_super_pix, 0, 10)
-
 # Calculate the color contrast prior, G_s[i]
 G_s = np.zeros((num_super_pix, 1))
 
@@ -104,9 +92,9 @@ for n in range(num_super_pix):
         for j in range(size_N):
             if super_pixels[i][j] == n:
                 G_s_img[i][j] = G_s[n]
-dip.figure(3)
+
 dip.imshow(G_s_img, 'gray')
-plt.savefig('p3.png',dpi=300,bbox_inches='tight',pad_inches=0.1)
+dip.show()
 
 # Get the binary version of G_s according to the threshold thresh_G
 G_s_bin = np.zeros((num_super_pix, 1))
@@ -127,10 +115,9 @@ for n in range(num_super_pix):
         for j in range(size_N):
             if super_pixels[i][j] == n:
                 img_G_s_bin[i][j] = G_s_bin[n]
-dip.figure(4)
+
 dip.imshow(img_G_s_bin, 'gray')
-# dip.show()
-plt.savefig('p4.png',dpi=300,bbox_inches='tight',pad_inches=0.1)
-# We need to follow a similar process to find I_s[i] and O_s[i]. All we need to do is replace the mu_super_pix with a
-# different feature, such as intensity in case of I_s[i]. For U_s[i], we need to just penalize the distance of from the
-# superpixel from centre of the image, so something like e^{-w[P'_s[i] - P_c]^2} should work.
+dip.show()
+
+# I found out that we need to normalize the RGB vectors and position vectors in order to get some better results.
+# Without this, we just get G_s[i] as all zeros, because the term inside the exponent is very large.
