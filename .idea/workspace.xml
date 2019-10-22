@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0338168d-45f3-4e68-a239-53987db58e05" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Superpixel_overseg/p1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Superpixel_overseg/p2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SalientDetection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SalientDetection.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0338168d-45f3-4e68-a239-53987db58e05" name="Default" comment="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!">
+      <change afterPath="$PROJECT_DIR$/tiger.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Superpixel_overseg/super_pix_diff_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Superpixel_overseg/super_pix_diff_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super_pix_diff.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/super_pix_diff.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,12 +13,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ThinkSpid &lt;rbb428@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SX2QQhtxNGQtX4etHxg3Ry9SrU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -75,12 +81,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570935703964</updated>
-      <workItem from="1571695603785" duration="1481000" />
+      <workItem from="1571695603785" duration="3437000" />
     </task>
+    <task id="LOCAL-00001" summary="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!">
+      <created>1571697674536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571697674536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -92,6 +116,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!" />
+    <option name="LAST_COMMIT_MESSAGE" value="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SalientDetection$super_pix_diff_normalization.coverage" NAME="super_pix_diff_normalization Coverage Results" MODIFIED="1571696476051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Superpixel_overseg" />
