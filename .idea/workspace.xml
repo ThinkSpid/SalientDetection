@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="0338168d-45f3-4e68-a239-53987db58e05" name="Default" comment="New Brunch for test other vector">
       <change afterPath="$PROJECT_DIR$/Superpixel_overseg/coloredChips.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -9,6 +10,11 @@
       <change beforePath="$PROJECT_DIR$/Superpixel_overseg/p3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Superpixel_overseg/p3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Superpixel_overseg/p4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Superpixel_overseg/p4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Superpixel_overseg/super_pix_diff_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Superpixel_overseg/super_pix_diff_normalization.py" afterDir="false" />
+=======
+    <list default="true" id="0338168d-45f3-4e68-a239-53987db58e05" name="Default" comment="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!">
+      <change afterPath="$PROJECT_DIR$/Superpixel_overseg/coloredChips.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,8 +133,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570935703964</updated>
+<<<<<<< Updated upstream
       <workItem from="1571695603785" duration="4507000" />
       <workItem from="1571781504252" duration="1105000" />
+=======
+      <workItem from="1571695603785" duration="3437000" />
+      <workItem from="1573412318293" duration="829000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!">
       <created>1571697674536</created>
