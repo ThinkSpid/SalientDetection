@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0338168d-45f3-4e68-a239-53987db58e05" name="Default" comment="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!">
-      <change afterPath="$PROJECT_DIR$/tiger.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/super_pix_diff.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/super_pix_diff.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="0338168d-45f3-4e68-a239-53987db58e05" name="Default" comment="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570935703964</updated>
       <workItem from="1571695603785" duration="3437000" />
+      <workItem from="1574038551016" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="I saw your code. I first try to run the G[i] first. I change some code to make the image output more easily. See the output as p1 to p4 By the way it consume a lot time to process the figure. I will try to implement other two you mentioned. Also i want to try to make a copy on Colab cause i thought i may be more quicker. But thanks for your research. I think it is a good start!">
       <created>1571697674536</created>
